@@ -1,0 +1,49 @@
+header,
+.main-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(./images/home-hero.jpg) no-repeat top;
+    background-size: auto, auto;
+    background-size: cover,cover;
+    height: 100vh;
+    
+
+
+}
+
+// .test {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+// }
+
+.main-menu {
+    display: flex;
+    align-items: flex-end;
+   
+    justify-content: flex-end;
+    color: rgb(99, 98, 98);
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li {
+            display: inline;
+        }
+}
+
+// .main-logo {
+// display:flex ;
+
+//     justify-content: center;
+//     align-items: flex-end;
+   
+// }
+
+
+
+
+
