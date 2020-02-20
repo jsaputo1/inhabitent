@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+
+
+<div class="hero-banner">
+        <?php get_header(); ?>
+    <div class="main-logo">
+        <img src="wp-content/themes/inhabitant/images/logos/inhabitent-logo-full.svg">
+    </div>
+</div>
+
+  
+
+
 
 <?php if( have_posts() ) :
 
@@ -18,6 +29,7 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
 
     
 <?php get_footer();?>

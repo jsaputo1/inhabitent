@@ -54,43 +54,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header,
-.main-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(./images/home-hero.jpg) no-repeat top;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(./images/home-hero.jpg) no-repeat top;
-  background-size: auto, auto;
-  background-size: cover,cover;
-  height: 100vh; }
-
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  color: #636262; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #636262;
+  padding: 0 130px 0 130px; }
   .main-menu a {
     text-decoration: none;
     color: white; }
   .main-menu li {
     display: inline; }
+  .main-menu img {
+    width: 50px; }
 
 body {
   background: white;
@@ -99,5 +81,21 @@ body {
   font-family: Merriweather Web,serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75;
-  width: 1120px; }
+  line-height: 1.75; }
+
+.hero-banner {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(./images/home-hero.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(./images/home-hero.jpg);
+  background-size: cover,cover; }
+
+.main-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
