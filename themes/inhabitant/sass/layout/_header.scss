@@ -10,11 +10,16 @@
         }
         li {
             display: inline;
-          
+            font-family: Novecento Sans Web,sans-serif;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px #323232;
+            padding-left: 1.5rem;
+            
         }
 
      img {
          width: 50px;
+         margin-left: 0;
      }
      padding: 0 130px 0 130px;
 }

@@ -10,7 +10,7 @@
 
     <header>
         <nav class="main-menu">
-            <img src="wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent-white.svg">
+            <a href="http://localhost:8888/red/projects/project-04/"><img src="wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent-white.svg"></a>
             <?php wp_nav_menu (array(
                 'theme_location' => 'main'
             ));?>

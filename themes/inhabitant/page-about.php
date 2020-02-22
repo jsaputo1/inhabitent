@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+
+
+<div class="about-hero-banner">
+        <?php get_header(); ?>
+        <h1> About </h1>
+</div>
 
 <?php if( have_posts() ) :
 
