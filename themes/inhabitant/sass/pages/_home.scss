@@ -9,14 +9,33 @@ body {
 }
 
 .hero-banner {
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(./images/home-hero.jpg);
-    background-size: cover,cover;
+  position: relative;
+  background-color: black;
+
+  img {
+    height: fit-content;
+    width: fit-content;
+    opacity: 0.75;
+    }
+
 }
-.main-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+
+#main-logo  {
+
+    opacity: 1;
+    color: white;
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    
+  
+
 }
+
+
+
+
+
 
 

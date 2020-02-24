@@ -1,0 +1,35 @@
+.about  {
+ 
+    
+
+    figure {
+        display: flex;
+
+    background-color: black;
+       
+
+        img {
+    height: fit-content;
+    width: 100vw;
+    opacity: 0.75;
+        }
+
+
+    }
+
+    
+   
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 100%;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 3em;
+        color: white;
+        text-transform: uppercase;
+        
+    }
+}

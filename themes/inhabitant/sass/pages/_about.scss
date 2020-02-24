@@ -1,17 +1,33 @@
-.about-hero-banner {
-    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(./images/about-hero.jpg);
-    background-size: cover,cover;
-    height: 100vh;
+.about {
 
-    h1 {
+    img {
+        
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        opacity: 0.75;
+      
+        }
+    
+
+    figure {
         display: flex;
+        background-color: black;
+    }
+
+
+    h2 {
+       
+        display: flex;
+        color: white;
+        width: 100vw;
+        position: absolute;
+        align-self: center;
         justify-content: center;
-        align-items: center;
-        height: 100%;
         font-family: Novecento Sans Web,sans-serif;
         font-size: 3em;
-        color: white;
-        text-transform: uppercase;
-        
+         text-transform: uppercase;
     }
 }
+
+

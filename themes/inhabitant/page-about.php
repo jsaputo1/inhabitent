@@ -1,17 +1,33 @@
 
 
-<div class="about-hero-banner">
+
         <?php get_header(); ?>
-        <h1> About </h1>
-</div>
+
+        <section class="about">
+
+
+
+
+        
+
 
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
+
+<figure>
+<?php the_post_thumbnail(); ?>
+
+        <h2><?php the_title(); ?></h2>
+
+
+</figure>
+
+
+
     
-    <h2><?php the_title(); ?></h2>
     <h3><?php the_permalink();?></h3>
     <?php the_content(); ?>
     
@@ -23,6 +39,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
+</section>
     
 <?php get_footer();?>
