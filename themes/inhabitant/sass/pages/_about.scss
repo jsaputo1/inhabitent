@@ -1,33 +1,29 @@
 .about {
-
-    img {
-        
-        height: fit-content;
-        width: fit-content;
-        position: relative;
-        opacity: 0.75;
-      
-        }
-    
-
-    figure {
-        display: flex;
-        background-color: black;
-    }
-
-
-    h2 {
-       
-        display: flex;
-        color: white;
-        width: 100vw;
-        position: absolute;
-        align-self: center;
-        justify-content: center;
-        font-family: Novecento Sans Web,sans-serif;
-        font-size: 3em;
-         text-transform: uppercase;
-    }
+  height: 100vh;
+  background-size: cover;
 }
 
+h2 {
+  display: flex;
+  color: white;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+}
 
+// .about {
+//     img {
+//       height: fit-content;
+//       width: fit-content;
+//       position: relative;
+//       opacity: 0.75;
+//     }
+
+//     figure {
+//       display: flex;
+//       background-color: black;
+//     }

@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<div class="header-wrap">
+      <div class="entry-header">
+         <h1 class="entry-title"><?php the_title(); ?></h1>
+</div>
+    </div>
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
