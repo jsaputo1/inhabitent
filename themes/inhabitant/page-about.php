@@ -1,7 +1,7 @@
 
 <!-- About Hero Banner -->
 
-<div class="about" 
+<div class="about-banner" 
     style="background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4) 0%,
@@ -15,18 +15,22 @@
 
 <!-- Title -->
     <h2><?php the_title(); ?></h2>
+
 </div>
+
 
 <!-- About Content -->
 
+<div class="about-content">
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
 while( have_posts() ) :
 the_post(); ?>
 
-<h3><?php the_permalink();?></h3>
+<div class="about-content">
 <?php the_content(); ?>
+</div>
 
 
 <!-- Loop ends -->
@@ -37,6 +41,7 @@ the_post(); ?>
 <?php else : ?>
 <p>No posts found</p>
 <?php endif;?>
+
 
 <!-- Footer -->
 <?php get_footer();?>

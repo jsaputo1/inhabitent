@@ -13,7 +13,7 @@
 
     <!-- Main Logo -->
     <div class="main-logo">
-    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
+         <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
     </div>
 </div>
 
@@ -25,7 +25,6 @@
         the_post(); ?>
 
 <h2><?php the_title(); ?></h2>
-<h3><?php the_permalink();?></h3>
 <?php the_content(); ?>
 
 <!-- Loop ends -->

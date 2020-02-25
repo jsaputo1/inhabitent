@@ -9,14 +9,14 @@
 <body <?php body_class();?> class="container">
 
     <header>
-        <nav class="main-menu">
+        <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">
             <a href="http://localhost:8888/red/projects/project-04/">
             <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ;?>"></a>
-            <?php wp_nav_menu (array(
-                'theme_location' => 'main'
-            ));?>
+            
+<!-- Menu -->
+        <?php wp_nav_menu(array(
+        'theme_location' => 'main'
+        )) ;?>  
         </nav>
     </header>
-
-
     
