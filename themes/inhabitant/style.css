@@ -96,11 +96,6 @@ table {
   font-weight: bold;
   font-style: normal; }
 
-header {
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
-
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,3 +216,45 @@ body {
 .product {
   padding-bottom: 20px;
   text-align: center; }
+
+.blog-banner-container {
+  height: 560px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+
+.blog-title {
+  margin-top: 50px;
+  background-color: #248a83;
+  width: 75%;
+  padding: 50px; }
+  .blog-title h1 {
+    font-size: 3em; }
+  .blog-title a {
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none; }
+
+.blog-bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+  .blog-bottom-text h3 {
+    font-size: 1em;
+    width: 50%;
+    background-color: #248a83;
+    color: white; }

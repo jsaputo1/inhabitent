@@ -1,0 +1,38 @@
+.blog-banner-container {
+  height: 560px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 50px;
+  background-color: #248a83;
+  width: 75%;
+  padding: 50px;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  a {
+    font-size: 2.5em;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.blog-bottom-text {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+
+  h3 {
+    font-size: 1em;
+    width: 50%;
+    background-color: #248a83;
+    color: white;
+  }
+}

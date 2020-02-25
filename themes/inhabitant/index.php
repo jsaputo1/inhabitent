@@ -1,23 +1,36 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
+<section class="journal">
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
-    
-    <!-- Loop ends -->
-    <?php endwhile;?>
 
+    <!-- Loop -->
+    <?php if( have_posts() )  
+        while( have_posts() ) :
+            the_post(); ?>
+
+    <!-- Blog Banner -->
+    <div class="blog-banner-container" 
+        style="background-image: 
+        url(<?php echo get_the_post_thumbnail_url();?>)">
+        <div class="blog-title">
+            <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+        </div>
+        <div class="blog-bottom-text">
+            <h3>bottom text</h3>
+        </div>
+    </div>
+    <!-- Blog Content -->
+    <div class="blog-content">
+            <p><?php the_content(); ?></p>
+        </div>
+    
+<!-- Loop ends -->
+<?php endwhile;?>
     <?php the_posts_navigation();?>
+   
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
 
+
+</section>
     
 <?php get_footer();?>
