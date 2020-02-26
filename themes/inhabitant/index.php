@@ -29,8 +29,13 @@
     <?php the_posts_navigation();?>
    
 
+    <div class="sidebar-journal">
+    <?php get_sidebar();?>
+</div>
+
 
 
 </section>
+
     
 <?php get_footer();?>

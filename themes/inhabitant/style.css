@@ -217,7 +217,15 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
+.journal {
+  width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%; }
+
 .blog-banner-container {
+  display: grid;
+  grid-column-start: 1;
   height: 560px;
   background-size: cover;
   display: -webkit-box;
@@ -230,17 +238,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-transform: uppercase; }
 
 .blog-title {
-  margin-top: 50px;
+  margin-top: 5%;
   background-color: #248a83;
-  width: 75%;
-  padding: 50px; }
-  .blog-title h1 {
-    font-size: 3em; }
+  width: 60%;
+  padding: 10px 0px 10px 50px; }
+  .blog-title h2 {
+    font-size: 2em;
+    font-family: Novecento Sans Web, sans-serif; }
   .blog-title a {
-    font-size: 2.5em;
     color: white;
     text-decoration: none; }
 
@@ -248,13 +257,30 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -ms-flex-line-pack: end;
-      align-content: flex-end; }
+      align-content: flex-end;
+  font-family: Merriweather Web, serif;
+  width: 100%; }
   .blog-bottom-text h3 {
     font-size: 1em;
-    width: 50%;
     background-color: #248a83;
-    color: white; }
+    width: 50%;
+    color: white;
+    margin-bottom: 10px; }
+
+.blog-content {
+  display: grid;
+  grid-column-start: 1;
+  font-family: Merriweather Web, serif; }
+
+.sidebar-journal {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1; }
