@@ -15,8 +15,10 @@ function inhabitant_features() {
     add_theme_support('post-thumbnails');
 
     register_nav_menus (array(
-        'main' => 'Main Menu'
+        'main' => 'Main Menu',
     ));
+
+ 
 }
 
 add_action('after_setup_theme', 'inhabitant_features');
@@ -25,13 +27,25 @@ function inhabitent_widgets () {
     register_sidebar(array(
         'name' => 'Sidebar Info',
         'id' => 'sidebar-info',
-        'description' => 'Add a text block sith your business hours',
+        'description' => 'Add a text block with your business hours',
         'before_widget' => '<aside id="%1$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h2 class="widget-hours">',
         'after_title' => '</h2>'
     ));
+
+    register_sidebar(array(
+        'name' => 'Contact Info Footer',
+        'id' => 'contact-info-footer',
+        'description' => 'Add contact info for the footer',
+        'before_widget' => '<div id="%1$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="contact-info">',
+        'after_title' => '</h2>'
+    ));
 }
+
+
 
 add_action ('widgets_init', 'inhabitent_widgets') ;
 

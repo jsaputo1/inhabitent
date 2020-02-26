@@ -106,7 +106,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #636262; }
+  color: #636262;
+  padding: 0 130px 0 130px; }
   .main-menu a {
     text-decoration: none;
     color: white; }
