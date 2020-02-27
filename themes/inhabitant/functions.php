@@ -38,11 +38,33 @@ function inhabitent_widgets () {
         'name' => 'Contact Info Footer',
         'id' => 'contact-info-footer',
         'description' => 'Add contact info for the footer',
-        'before_widget' => '<div id="%1$s">',
+        'before_widget' => '<div class="contact-info-footer">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="contact-info">',
+        'before_title' => '<h2>',
         'after_title' => '</h2>'
     ));
+
+    register_sidebar(array(
+        'name' => 'Business Hours Footer',
+        'id' => 'business-hours-footer',
+        'description' => 'Add business hours for the footer',
+        'before_widget' => '<div class="business-hours">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
+    ));
+
+
+    register_sidebar(array(
+        'name' => 'Copyright Footer',
+        'id' => 'copyright-footer',
+        'description' => 'Copyright Text in the Footer',
+        'before_widget' => '<div class="copyright-footer">',
+        'after_widget' => '</div>',
+    
+    ));
+
+
 }
 
 

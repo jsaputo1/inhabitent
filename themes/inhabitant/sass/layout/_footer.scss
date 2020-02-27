@@ -2,6 +2,63 @@ footer {
   padding: 50px 0px 50px 0px;
 }
 
+.footer-info-container {
+  display: flex;
+  justify-content: space-between;
+  img {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  padding: 25px;
+}
+
+.contact-info-footer {
+  h2 {
+    color: #d99054;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  p {
+    font-family: Merriweather Web, serif;
+    color: white;
+    font-size: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  padding-right: 25px;
+}
+
+.business-hours {
+  h2 {
+    color: #d99054;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  p {
+    font-family: Merriweather Web, serif;
+    font-size: 1rem;
+    color: white;
+  }
+}
+
+.day-of-week {
+  font-weight: bold;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: center;
+  font-family: Novecento Sans Web, sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
 // .about-hero-banner {
 //     background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(./images/about-hero.jpg);
 //     background-size: cover,cover;

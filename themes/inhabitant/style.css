@@ -147,6 +147,63 @@ table {
 footer {
   padding: 50px 0px 50px 0px; }
 
+.footer-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px; }
+  .footer-info-container img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 50px; }
+
+.contact-info-footer {
+  padding-right: 25px; }
+  .contact-info-footer h2 {
+    color: #d99054;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem; }
+  .contact-info-footer p {
+    font-family: Merriweather Web, serif;
+    color: white;
+    font-size: 1rem; }
+  .contact-info-footer a {
+    text-decoration: none;
+    color: white; }
+
+.business-hours h2 {
+  color: #d99054;
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+.business-hours p {
+  font-family: Merriweather Web, serif;
+  font-size: 1rem;
+  color: white; }
+
+.day-of-week {
+  font-weight: bold; }
+
+.copyright-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Novecento Sans Web, sans-serif;
+  color: white;
+  font-size: 1rem; }
+
 body {
   background: white;
   color: #404040;

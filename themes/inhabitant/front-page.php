@@ -15,7 +15,6 @@
 
 
 
-
     
 
 <!-- Main Logo -->
@@ -23,6 +22,7 @@
         <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
     </div>
 </div>
+
 
 
 
@@ -81,4 +81,17 @@
 
 
 <!-- Footer -->
+
+
+<?php
+$content = the_content();
+
+preg_match_all( '@<h2.*?>(.*?)<\/h2>@', $content, $matches );
+$tag = $matches[1];
+var_dump($tag);
+
+?>
+
+
+
 <?php get_footer();?>
