@@ -7,9 +7,6 @@
         the_post(); ?>
 
 
-<div class="product-grid">
-    <div class="product-grid-item">
-        <div class="thumbnail-wrapper">
 
     <h2><?php the_title(); ?>The title</h2>
     <h3><?php the_permalink();?>The permalink</h3>

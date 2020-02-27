@@ -4,7 +4,7 @@
     url(<?php echo get_template_directory_uri() . '/images/dark-wood@2x.png);'?>)">
 
     <!-- Menu -->
-    <?php get_contact();?>
+    
 
 
     <!-- <div class="contact-info">

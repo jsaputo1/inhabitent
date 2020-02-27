@@ -149,15 +149,12 @@ footer {
 
 body {
   background: white;
-  font-size: 2em;
   color: #404040;
   font-family: Merriweather Web, serif;
   font-size: 16px;
-  font-size: 1rem;
   line-height: 1.75; }
 
 .hero-banner {
-  height: 100vh;
   background-size: cover; }
 
 .main-logo {
@@ -175,7 +172,27 @@ body {
           justify-content: center; }
   .main-logo img {
     width: 25%;
-    height: 255; }
+    height: 25%; }
+
+.home-product-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.home-product-container img {
+  width: 50%;
+  height: 50%; }
+
+.home-journal-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.home-journal-container {
+  margin-bottom: 100px; }
+  .home-journal-container img {
+    width: 100%;
+    height: 100%; }
 
 .about-banner {
   height: 100vh;

@@ -1,15 +1,14 @@
 body {
   background: white;
-  font-size: 2em;
+
   color: #404040;
   font-family: Merriweather Web, serif;
   font-size: 16px;
-  font-size: 1rem;
+
   line-height: 1.75;
 }
 
 .hero-banner {
-  height: 100vh;
   background-size: cover;
 }
 
@@ -23,6 +22,34 @@ body {
 
   img {
     width: 25%;
-    height: 255;
+    height: 25%;
   }
+}
+
+.home-product-grid {
+  display: flex;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: 1;
+}
+
+.home-product-container {
+  // border: 1px solid black;
+  // margin: 0 10px 10px 10px;
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.home-journal-grid {
+  display: flex;
+}
+
+.home-journal-container {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  margin-bottom: 100px;
 }

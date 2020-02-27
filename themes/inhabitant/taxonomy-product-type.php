@@ -1,5 +1,10 @@
 
 <?php get_header(); ?>
+
+<p>Test</p>
+
+
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
