@@ -40,9 +40,9 @@
         <?php the_posts_navigation();?>
     
     </div>
-    <div class="sidebar-journal">
+
     <?php get_sidebar();?>
-</div>
+
 
 
 

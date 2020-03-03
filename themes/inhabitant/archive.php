@@ -23,23 +23,23 @@
         </div>
         <!-- Blog Content -->
         <div class="blog-content">
-                <p><?php the_content(); ?></p>
-                <div class="journal-button">
-                <a href="<?php the_permalink();?>">Read more →</a>
-                </div>
+            <p><?php the_content(); ?></p>
+            <div class="journal-button">
+            <a href="<?php the_permalink();?>">Read more →</a>
             </div>
+        </div>
         
     <!-- Loop ends -->
     <?php endwhile;?>
         <?php the_posts_navigation();?>
     
+        </div>
 
-        <div class="sidebar-journal">
         <?php get_sidebar();?>
-    </div>
 
 
-    </div>
+
+   
 </section>
 
     
