@@ -1,5 +1,11 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
   line-height: 40px;
+  padding: 75px 0px 0px 50px;
+  margin: 0 auto;
 
   h2 {
     font-family: Novecento Sans Web, sans-serif;
