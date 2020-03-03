@@ -3,12 +3,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%;
-
-  a {
-    color: #248a83;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
 }
 
 .blog-banner-container {
@@ -19,7 +13,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
@@ -29,6 +24,7 @@
   width: 60%;
   padding: 10px 0px 10px 50px;
   h2 {
+    font-weight: 700;
     font-size: 2em;
     font-family: Novecento Sans Web, sans-serif;
   }
@@ -47,20 +43,18 @@
   align-content: flex-end;
   font-family: Merriweather Web, serif;
 
-  width: 100%;
-
   p {
+    display: flex;
+    justify-content: space-around;
     font-size: 1em;
     background-color: #248a83;
-    width: 50%;
     color: white;
-    margin-bottom: 10px;
+    padding: 2px 30px;
   }
 }
 .blog-content {
   display: grid;
   grid-column-start: 1;
-
   font-family: Merriweather Web, serif;
 }
 
@@ -78,4 +72,25 @@
   font-family: Novecento Sans Web, sans-serif;
 
   margin-right: 10px;
+}
+
+.journal-button {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  a {
+    color: $darkGrey;
+    background-color: white;
+    border: 1px solid $darkGrey;
+    color: $darkGrey;
+    padding: 10px 30px;
+
+    &:hover {
+      background-color: $green;
+      border: 1px solid $green;
+      color: #fff;
+    }
+  }
 }

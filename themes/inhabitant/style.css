@@ -217,8 +217,10 @@ body {
   font-family: Merriweather Web, serif;
   font-size: 16px;
   line-height: 1.75; }
-  body a:hover {
-    color: #2f1339; }
+  body a {
+    text-decoration: none; }
+    body a:hover {
+      color: #2f1339; }
 
 .content-container {
   width: 1170px;
@@ -372,10 +374,6 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
-  .journal a {
-    color: #248a83;
-    text-decoration: none;
-    text-transform: uppercase; }
 
 .blog-banner-container {
   display: grid;
@@ -392,7 +390,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   text-transform: uppercase; }
 
 .blog-title {
@@ -401,6 +400,7 @@ body {
   width: 60%;
   padding: 10px 0px 10px 50px; }
   .blog-title h2 {
+    font-weight: 700;
     font-size: 2em;
     font-family: Novecento Sans Web, sans-serif; }
   .blog-title a {
@@ -420,14 +420,17 @@ body {
           justify-content: flex-end;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  font-family: Merriweather Web, serif;
-  width: 100%; }
+  font-family: Merriweather Web, serif; }
   .blog-bottom-text p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 1em;
     background-color: #248a83;
-    width: 50%;
     color: white;
-    margin-bottom: 10px; }
+    padding: 2px 30px; }
 
 .blog-content {
   display: grid;
@@ -450,3 +453,20 @@ body {
 .blog-content-cat {
   font-family: Novecento Sans Web, sans-serif;
   margin-right: 10px; }
+
+.journal-button {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .journal-button a {
+    color: #404040;
+    background-color: white;
+    border: 1px solid #404040;
+    color: #404040;
+    padding: 10px 30px; }
+    .journal-button a:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #fff; }
