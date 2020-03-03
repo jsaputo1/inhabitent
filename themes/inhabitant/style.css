@@ -306,15 +306,21 @@ body {
   grid-template-columns: repeat(4, 1fr); }
 
 .item-container {
-  border: 1px solid black;
+  border: 1px solid #e1e1e1;
   margin: 0 10px 10px 10px; }
   .item-container img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    border-bottom: 5px solid #e1e1e1; }
 
 .product {
-  padding-bottom: 20px;
-  text-align: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px 10px 10px; }
 
 .single-product {
   display: -webkit-box;
