@@ -11,12 +11,12 @@
             <?php the_post_thumbnail(); ?>
         <div class="single-product-text">
             <h2><?php the_title(); ?></h2>
-            <?php echo '$' . get_field('price');?>
+           <h3> <?php echo '$' . get_field('price');?></h3>
             <p><?php the_content(); ?></p>
-                <div class="single-product-buttons">
-                    <button>Like</button>
-                    <button>Tweet</button>
-                    <button>Pin</button>
+                <div class="product-button">
+                   <a href="#"> Like </a>
+                   <a href="#"> Tweet </a>
+                   <a href="#">Pin </a>
                 </div>
         </div>
     </div>

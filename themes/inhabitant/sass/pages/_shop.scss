@@ -23,11 +23,12 @@
 .single-product {
   display: flex;
   width: 100%;
+  margin-top: 50px;
 
   img {
     object-fit: contain;
     object-position: top;
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -61,5 +62,43 @@
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 15px;
+  }
+}
+
+.product-button {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  a {
+    color: $darkGrey;
+    background-color: white;
+    border: 1px solid $darkGrey;
+    color: $darkGrey;
+    padding: 10px 30px;
+
+    &:hover {
+      background-color: $green;
+      border: 1px solid $green;
+      color: #fff;
+    }
+  }
+}
+
+.single-product-text {
+  margin-left: 50px;
+  h2 {
+    color: #d99054;
+    font-size: 2em;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $darkGrey;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.8em;
   }
 }
