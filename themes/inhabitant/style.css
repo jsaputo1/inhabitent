@@ -211,6 +211,23 @@ footer {
   color: white;
   font-size: 1rem; }
 
+.sidebar {
+  line-height: 40px; }
+  .sidebar h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.5em;
+    color: #2f1339;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .sidebar p {
+    color: #404040;
+    margin-bottom: 15px;
+    font-family: Merriweather Web, serif; }
+  .sidebar a {
+    color: #248a83; }
+    .sidebar a:hover {
+      color: #2f1339; }
+
 body {
   background: white;
   color: #404040;

@@ -1,0 +1,24 @@
+.sidebar {
+  line-height: 40px;
+
+  h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.5em;
+    color: #2f1339;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $darkGrey;
+    margin-bottom: 15px;
+    font-family: Merriweather Web, serif;
+  }
+
+  a {
+    color: $green;
+    &:hover {
+      color: #2f1339;
+    }
+  }
+}
