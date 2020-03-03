@@ -56,11 +56,14 @@ footer {
 }
 
 .copyright-footer {
-  display: flex;
-  justify-content: center;
-  font-family: Novecento Sans Web, sans-serif;
-  color: white;
-  font-size: 1rem;
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Novecento Sans Web, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
 
 // .about-hero-banner {
