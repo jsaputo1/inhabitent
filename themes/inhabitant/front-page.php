@@ -42,6 +42,8 @@
         </div>
             <?php endforeach;?>
         </div>
+
+
     <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
         <?php
@@ -60,6 +62,9 @@
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
+
+
+    
 </div>
 
 

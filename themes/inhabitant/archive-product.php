@@ -2,6 +2,15 @@
 <?php get_header(); ?>
 
 <div class="content-container">
+<!-- header -->
+<div class="product-header">
+    <h1>Shop Stuff</h1>
+    <p><?php wp_nav_menu(array(
+            'theme_location' => 'product'
+            )) ;?>  
+</div>
+
+
     <section class="product-page">
 
         <!-- Loop -->
@@ -16,7 +25,7 @@
                 <a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a></h2>
             </div>
             <div class="product">
-                <span class="title"><?php the_title(); ?>..............</span>
+                <span class="title"><?php the_title(); ?></span>
                 <span class="price"> <?php echo '$' . get_field('price');?></span>
             </div>
         </div>

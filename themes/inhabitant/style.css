@@ -111,6 +111,8 @@ table {
   .main-menu a {
     text-decoration: none;
     color: white; }
+    .main-menu a:hover {
+      color: #248a83; }
   .main-menu li {
     display: inline;
     font-family: Novecento Sans Web, sans-serif;
@@ -215,6 +217,8 @@ body {
   font-family: Merriweather Web, serif;
   font-size: 16px;
   line-height: 1.75; }
+  body a:hover {
+    color: #2f1339; }
 
 .content-container {
   width: 1170px;
@@ -323,6 +327,39 @@ body {
     -o-object-position: top;
        object-position: top;
     width: 50%; }
+
+.product-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .product-header ul {
+    margin-bottom: 40px; }
+  .product-header li {
+    display: inline;
+    padding: 20px; }
+  .product-header a {
+    color: #248a83;
+    font-size: 1.2rem;
+    text-decoration: none; }
+  .product-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px; }
 
 .journal {
   width: 1170px;

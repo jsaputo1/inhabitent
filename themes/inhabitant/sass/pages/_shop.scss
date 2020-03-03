@@ -34,3 +34,36 @@
 
 .single-product-button {
 }
+
+.product-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  li {
+    display: inline;
+    padding: 20px;
+  }
+
+  a {
+    color: $green;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
