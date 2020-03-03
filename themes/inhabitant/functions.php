@@ -16,7 +16,10 @@ function inhabitant_features() {
 
     register_nav_menus (array(
         'main' => 'Main Menu',
+        'product' => 'Product Menu'
     ));
+
+
 
  
 }
