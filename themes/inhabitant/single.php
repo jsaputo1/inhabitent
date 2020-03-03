@@ -27,6 +27,11 @@
             <span class="blog-content-cat">Posted in → <?php the_category( ' , ' );?></span>
             <span class="blog-content-tag">Tagged → <?php the_tags( ' , ' );?> </span>
         </div>
+        <div class="journal-button">
+            <a href="#">Like</a>
+            <a href="#">Tweet</a> 
+            <a href="#">Pin</a>
+        </div>
     </div>
     
 <!-- Loop ends -->
