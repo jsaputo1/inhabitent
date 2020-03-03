@@ -20,12 +20,8 @@
     </div>
     <!-- Blog Content -->
     <div class="blog-content">
-        <p><?php the_content(); ?></p>
-        <div class="blog-content-bottom-links">
-            <span class="blog-content-cat">Posted in → <?php the_category( ' , ' );?></span>
-            <span class="blog-content-tag">Tagged → <?php the_tags( ' , ' );?> </span>
+            <p><?php the_content(); ?></p>
         </div>
-    </div>
     
 <!-- Loop ends -->
 <?php endwhile;?>

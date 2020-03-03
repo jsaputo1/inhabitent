@@ -20,36 +20,29 @@
 
 <!-- Main Content -->
 
+
+
 <div class="content-container">
 
+    <h1 class="product-title">Title</h1>
     <!-- Product Type Loop -->
-    <div class="home-product-grid">
-
+    <div class="home-product-section">
         <?php 
         $terms = get_terms(array(
             'taxonomy' => 'product-type',
             'hide_empty' => false
         )); ?>
         <?php
-
         foreach($terms as $term) :
             $file_name = $term->name . '.svg';?>
-        
         <div class="home-product-container">
-
-                <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
-
-                <p><?php echo $term->description;?></p>
-
-                <p><a href="<?php echo get_permalink() . 'product-type/' . $term->slug ?>"><?php echo $term->name;?> Stuff</a></p>
+            <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
+            <p><?php echo $term->description;?></p>
+            <p><a href="<?php echo get_permalink() . 'product-type/' . $term->slug ?>"><?php echo $term->name;?> Stuff</a></p>
         </div>
-
             <?php endforeach;?>
         </div>
-
-
-    <div class="home-journal-grid">
-
+    <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
         <?php
         $args = array( 
@@ -58,19 +51,13 @@
             'numberposts' => 3
             );
         $product_posts = get_posts( $args ); // returns an array of posts
-        ​
         ?>
-
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-        
-
         <div class="home-journal-container">
-            <?php the_post_thumbnail(); ?>
+            <figure><?php the_post_thumbnail(); ?></figure>
             <p class="home-journal-small"><?php the_date();?><?php wp_count_comments() ?>Test</p>
-            <a href="<?php the_permalink();?>"><h1 class="home-page-journal-title"><?php the_title();?></h1></a>
-            <button class="home-journal-button">Read Entry</button>
+            
         </div>
-
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
 </div>

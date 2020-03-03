@@ -3,6 +3,12 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%;
+
+  a {
+    color: #248a83;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
 .blog-banner-container {
@@ -62,4 +68,14 @@
   display: grid;
   grid-column-start: 2;
   grid-row-start: 1;
+}
+
+.blog-content-bottom-links {
+  display: flex;
+  justify-content: flex-start;
+}
+.blog-content-cat {
+  font-family: Novecento Sans Web, sans-serif;
+
+  margin-right: 10px;
 }

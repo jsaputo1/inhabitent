@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<body <?php body_class();?> class="container">
+<body>
 
     <header> 
         <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">

@@ -147,7 +147,7 @@ table {
 footer {
   padding: 50px 0px 50px 0px; }
 
-.footer-info-container {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +155,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px; }
-  .footer-info-container img {
+  .footer-container img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,6 +163,11 @@ footer {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-right: 50px; }
+
+.footer-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .contact-info-footer {
   padding-right: 25px; }
@@ -235,21 +240,35 @@ body {
     width: 25%;
     height: 25%; }
 
-.home-product-grid {
+.home-product-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.home-product-container img {
-  width: 50%;
-  height: 50%; }
+.home-product-container {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px; }
+  .home-product-container img {
+    width: 50%;
+    height: 50%; }
 
-.home-journal-grid {
+.product-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Sans Web, sans-serif;
+  font-size: 2.1rem; }
+
+.home-journal-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .home-journal-container {
+  border: 1px solid #e1e1e1;
   margin-bottom: 100px; }
   .home-journal-container img {
     width: 100%;
@@ -293,11 +312,27 @@ body {
   padding-bottom: 20px;
   text-align: center; }
 
+.single-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .single-product img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    width: 50%; }
+
 .journal {
   width: 1170px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .journal a {
+    color: #248a83;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .blog-banner-container {
   display: grid;
@@ -360,3 +395,15 @@ body {
   display: grid;
   grid-column-start: 2;
   grid-row-start: 1; }
+
+.blog-content-bottom-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.blog-content-cat {
+  font-family: Novecento Sans Web, sans-serif;
+  margin-right: 10px; }
