@@ -57,14 +57,14 @@
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
         <div class="home-journal-container">
             <figure><?php the_post_thumbnail(); ?></figure>
-            <p class="home-journal-small"><?php the_date();?><?php wp_count_comments() ?>Test</p>
+            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?>Test</p>
             
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
 
 
-    
+
 </div>
 
 
