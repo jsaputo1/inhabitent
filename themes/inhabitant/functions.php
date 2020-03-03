@@ -6,6 +6,8 @@ function inhabitant_files() {
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
 }wp_register_style("custom", get_template_directory_uri() . "/css/custom.css", '', '1.0.0');
 
+
+
 add_action('wp_enqueue_scripts', 'inhabitant_files');
 
 //Adds theme support - ex: title tag

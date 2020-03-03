@@ -422,7 +422,7 @@ body {
       align-content: flex-end;
   font-family: Merriweather Web, serif;
   width: 100%; }
-  .blog-bottom-text h3 {
+  .blog-bottom-text p {
     font-size: 1em;
     background-color: #248a83;
     width: 50%;

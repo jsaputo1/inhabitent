@@ -15,7 +15,9 @@
             <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
         </div>
         <div class="blog-bottom-text">
-            <h3>bottom text</h3>
+            <p>
+            <?php echo get_the_date() . " /"  ?>  BY <?php the_author(); ?>
+            </p>
         </div>
     </div>
     <!-- Blog Content -->
