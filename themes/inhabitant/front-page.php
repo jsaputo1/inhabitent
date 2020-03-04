@@ -24,7 +24,7 @@
 
 <div class="content-container">
 
-    <h1 class="product-title">Title</h1>
+    <h1 class="product-title">Shop Stuff</h1>
     <!-- Product Type Loop -->
     <div class="home-product-section">
         <?php 
@@ -38,12 +38,14 @@
         <div class="home-product-container">
             <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
             <p><?php echo $term->description;?></p>
-            <p><a href="<?php echo get_permalink() . 'product-type/' . $term->slug ?>"><?php echo $term->name;?> Stuff</a></p>
+            <div class="green-button">
+                <a href="<?php echo get_permalink() . 'product-type/' . $term->slug ?>"><?php echo $term->name;?> Stuff</a>
+            </div>
         </div>
             <?php endforeach;?>
         </div>
 
-
+    <h1 class="product-title">Shop Stuff</h1>
     <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
         <?php

@@ -7,6 +7,8 @@
     <h1>Shop Stuff</h1>
     <p><?php wp_nav_menu(array(
             'theme_location' => 'product'
+            
+
             )) ;?>  
 </div>
 
@@ -14,6 +16,11 @@
     <section class="product-page">
 
         <!-- Loop -->
+        <?php query_posts(array(  
+    'post_type' => array( 'product', ),
+    'posts_per_page' => 16, 
+    ));
+?>
         <?php if( have_posts() ) :
     //The WordPress Loop: loads post content 
         while( have_posts() ) :
