@@ -14,7 +14,7 @@
 
 <!-- Main Logo -->
     <div class="main-logo">
-        <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
+        <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>">
     </div>
 </div>
 

@@ -7,7 +7,18 @@ function inhabitant_files() {
 
     wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array ('jquery'), NULL, true);
 
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array ('jquery'), NULL, true);
+
+
+    add_action( 'wp_enqueue_scripts', 'tthq_add_custom_fa_css' );
+    function tthq_add_custom_fa_css() {
+    wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
+    }
+
+
 }
+
+// build/js/main.min.js',
 
 
 
