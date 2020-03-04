@@ -24,7 +24,9 @@
 
 <div class="content-container">
 
-    <h1 class="product-title">Shop Stuff</h1>
+    <h1 class="product-title">Shop Stuff
+        
+    </h1>
     <!-- Product Type Loop -->
     <div class="home-product-section">
         <?php 

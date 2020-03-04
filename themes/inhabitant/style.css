@@ -96,9 +96,17 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 250px; }
+
+.header-search {
+  margin-left: 25px; }
+
 .main-menu {
   width: 100%;
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +134,7 @@ table {
     margin-left: 0; }
 
 .main-menu2 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
   position: fixed;
   display: -webkit-box;

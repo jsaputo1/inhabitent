@@ -1,9 +1,17 @@
 header {
 }
 
+.header-menu {
+  display: flex;
+  padding-right: 250px;
+}
+
+.header-search {
+  margin-left: 25px;
+}
 .main-menu {
   width: 100%;
-  position: fixed;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +39,7 @@ header {
 }
 
 .main-menu2 {
-  background-color: white;
+  background-color: hsla(0, 0%, 100%, 0.85);
   width: 100%;
   position: fixed;
   display: flex;

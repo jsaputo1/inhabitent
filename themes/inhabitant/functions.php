@@ -5,20 +5,26 @@ function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
 
-    wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array ('jquery'), NULL, true);
+    wp_enqueue_script('jquery');
 
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array ('jquery'), NULL, true);
+    wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js');
+
+   
+
+    wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
+    
+
+    if(is_page('Home', 'About')){ 
+        global $wp_query;
+
+           wp_enqueue_script('main-js', get_template_directory_uri() . '/build/js/main.min.js');
+	
+        }
+       }
 
 
-    add_action( 'wp_enqueue_scripts', 'tthq_add_custom_fa_css' );
-    function tthq_add_custom_fa_css() {
-    wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
-    }
 
 
-}
-
-// build/js/main.min.js',
 
 
 
@@ -26,6 +32,7 @@ function inhabitant_files() {
 
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 
 //Adds theme support - ex: title tag
 function inhabitant_features() {

@@ -15,17 +15,22 @@
             <img src="<?php echo is_page(array('About', 'Home')) ?  get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :
          get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;?> " >        
         </a>
-
+       
             <!-- Menu -->
+        <div class="header-menu">
         <?php wp_nav_menu(array(
         'theme_location' => 'main'
         )) ;?>  
         <!-- Search -->
-
         <div class="header-search">
-
-<?php get_search_form();?>
+         <?php get_search_form();?>
         </div>
+        </div>
+
+        
+
+
+       
 
 
         </nav>
