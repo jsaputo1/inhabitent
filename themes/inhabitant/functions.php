@@ -4,7 +4,13 @@
 function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
     wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
-}wp_register_style("custom", get_template_directory_uri() . "/css/custom.css", '', '1.0.0');
+
+    wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js', array ('jquery'), NULL, true);
+
+}
+
+
+
 
 
 
@@ -20,10 +26,6 @@ function inhabitant_features() {
         'main' => 'Main Menu',
         'product' => 'Product Menu'
     ));
-
-
-
- 
 }
 
 add_action('after_setup_theme', 'inhabitant_features');
@@ -91,6 +93,14 @@ function inhabitent_post_types () {
         ),
             'menu_item' => 'dashicons-store',
     ));
+
+    function inhabitent_adjust_product($query) {
+        if(!is_admin() && is_post_type_archive(‘product’)) :
+            $query->set(‘orderby’, ‘title’);
+            $query->set(‘order’, ‘ASC’);
+        endif;
+    }
+    add_action(‘pre_get_posts’, ‘inhabitent_adjust_product’);
 
     // Register Custom Taxonomy
     
