@@ -3,8 +3,7 @@
         <a href="#" class="search-toggle">
         <i class="fas fa-search"></i>
         </a>
-        <label>
-            <input placeholder="Type and hit enter" type="search" name="s" value="<?php echo esc_attr(get_search_query()); ?>">
-            <input type="submit" id="search-submit" value="<?php echo esc_attr ('Search'); ?>">
+        <label class="search-field">
+            <input placeholder="Type and hit enter" type="search" name="s" value="<?php echo esc_attr(get_search_query()); ?>" class="search-input">
         </fieldset>
 </form>

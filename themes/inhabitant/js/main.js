@@ -1,7 +1,9 @@
 (function($) {
   console.log('main 1 working');
 
-  $navHeight = $('.hero-banner').height();
+  $navHeight = 700;
+
+  console.log($navHeight);
 
   $(window).on('scroll', function() {
     if (window.pageYOffset > $navHeight) {
@@ -13,10 +15,3 @@
     }
   });
 })(jQuery);
-
-// if (window.pageYOffset > sticky) {
-//   header.classList.add('sticky');
-//   console.log('test');
-// } else {
-//   header.classList.remove('sticky');
-// }

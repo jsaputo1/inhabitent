@@ -160,6 +160,16 @@ table {
     width: 50px;
     margin-left: 0; }
 
+.search-field {
+  display: none; }
+
+.header-search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 1em; }
+
 footer {
   padding: 50px 0px 50px 0px; }
 

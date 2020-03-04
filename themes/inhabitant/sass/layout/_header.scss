@@ -64,3 +64,17 @@ header {
   }
   padding: 0 130px 0 130px;
 }
+
+.search-field {
+  display: none;
+}
+
+.header-search {
+  input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1em;
+  }
+}
