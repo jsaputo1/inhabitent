@@ -23,7 +23,7 @@
         </div>
         <!-- Blog Content -->
         <div class="blog-content">
-            <p><?php the_content(); ?></p>
+            <p><?php echo wp_trim_words( get_the_content(), 40, '...' );?></p>
             <div class="journal-button">
             <a href="<?php the_permalink();?>">Read more →</a>
             </div>
