@@ -12,8 +12,7 @@
             <h2><?php the_title();?></h2>
             <p>
 
-            <?php
-echo wp_trim_words( get_the_content(), 40, '...' );
+            <?php echo wp_trim_words( get_the_content(), 40, '...' );
 ?>
         
         

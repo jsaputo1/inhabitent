@@ -324,7 +324,9 @@ body {
     background-color: #248a83;
     padding: 10px 30px; }
     .green-button a:hover {
-      outline: 0; }
+      color: white;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%); }
 
 .product-title {
   display: -webkit-box;
@@ -344,14 +346,55 @@ body {
 .home-journal-section {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .home-journal-container {
   border: 1px solid #e1e1e1;
-  margin-bottom: 100px; }
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px; }
   .home-journal-container img {
     width: 100%;
-    height: 100%; }
+    height: 50%;
+    border: 1px solid #e1e1e1;
+    border-bottom-width: 5px; }
+  .home-journal-container h3 {
+    font-size: 12px;
+    margin-top: 10px; }
+  .home-journal-container h2 {
+    color: #248a83;
+    font-size: 1.3em;
+    font-weight: 700; }
+
+.front-journal-button {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+  .front-journal-button a {
+    color: #404040;
+    background-color: white;
+    border: 1px solid #404040;
+    color: #404040;
+    padding: 10px 30px; }
+    .front-journal-button a:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #fff; }
+
+.home-journal-text {
+  padding-left: 20px; }
 
 .about-banner {
   height: 100vh;

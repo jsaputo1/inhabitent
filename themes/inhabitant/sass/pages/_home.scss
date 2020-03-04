@@ -81,7 +81,12 @@ body {
     padding: 10px 30px;
 
     &:hover {
-      outline: 0;
+      color: white;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
     }
   }
 }
@@ -100,14 +105,57 @@ body {
 
 .home-journal-section {
   display: flex;
+  justify-content: space-around;
 }
 
 .home-journal-container {
   border: 1px solid #e1e1e1;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   img {
     width: 100%;
-    height: 100%;
+    height: 50%;
+    border: 1px solid #e1e1e1;
+    border-bottom-width: 5px;
   }
-  margin-bottom: 100px;
+
+  h3 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    color: $green;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  margin-bottom: 50px;
+}
+
+.front-journal-button {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  a {
+    color: $darkGrey;
+    background-color: white;
+    border: 1px solid $darkGrey;
+    color: $darkGrey;
+    padding: 10px 30px;
+
+    &:hover {
+      background-color: $green;
+      border: 1px solid $green;
+      color: #fff;
+    }
+  }
+}
+
+.home-journal-text {
+  padding-left: 20px;
 }

@@ -59,13 +59,20 @@
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
         <div class="home-journal-container">
             <figure><?php the_post_thumbnail(); ?></figure>
-            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?>Test</p>
+            <div class="home-journal-text">
+                <h3><?php echo get_the_date();?><?php wp_count_comments() ?></h3>
+                <h2><?php the_title(); ?></h2>
+                <div class="front-journal-button">
+                <a href="<?php the_permalink(); ?>"> Read Entry </a>
+            </div>
+        </div>
             
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>
 
-
+    
+   
 
 </div>
 
