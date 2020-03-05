@@ -1,0 +1,64 @@
+.broken-page {
+  width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%;
+
+  fieldset {
+    padding: 25px 0;
+  }
+
+  a {
+    color: $green;
+  }
+
+  h1 {
+    font-size: 2.4em;
+    font-family: Novecento Sans Web, sans-serif;
+    color: $darkGrey;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #2f1339;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+  }
+
+  h3 {
+    color: $darkGrey;
+  }
+
+  p {
+    font-size: 1em;
+    color: $darkGrey;
+    font-family: Merriweather Web, serif;
+  }
+
+  select {
+    margin-bottom: 50px;
+  }
+}
+
+.page-search {
+  i {
+    display: none;
+  }
+  label {
+    display: block;
+  }
+
+  input {
+    color: $darkGrey;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    font-family: Merriweather Web, serif;
+    font-size: 1rem;
+    padding: 5px;
+  }
+}

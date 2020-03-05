@@ -496,9 +496,22 @@ p {
   grid-template-columns: repeat(4, 1fr); }
 
 .item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid #e1e1e1;
   margin: 0 10px 10px 10px; }
-  .item-container img {
+
+.shop-pic {
+  height: 75%; }
+  .shop-pic img {
     width: 100%;
     height: 100%;
     border-bottom: 5px solid #e1e1e1; }
@@ -510,7 +523,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5px 10px 10px 10px; }
+  padding: 5px 10px 15px 10px; }
 
 .single-product {
   display: -webkit-box;
@@ -689,3 +702,49 @@ p {
       background-color: #248a83;
       border: 1px solid #248a83;
       color: #fff; }
+
+.broken-page {
+  width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 75% 20%; }
+  .broken-page fieldset {
+    padding: 25px 0; }
+  .broken-page a {
+    color: #248a83; }
+  .broken-page h1 {
+    font-size: 2.4em;
+    font-family: Novecento Sans Web, sans-serif;
+    color: #404040;
+    text-transform: uppercase;
+    padding: 20px 0; }
+  .broken-page h2 {
+    font-size: 1.5em;
+    color: #2f1339;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: 700;
+    padding: 20px 0; }
+  .broken-page h3 {
+    color: #404040; }
+  .broken-page p {
+    font-size: 1em;
+    color: #404040;
+    font-family: Merriweather Web, serif; }
+  .broken-page select {
+    margin-bottom: 50px; }
+
+.page-search i {
+  display: none; }
+
+.page-search label {
+  display: block; }
+
+.page-search input {
+  color: #404040;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font-family: Merriweather Web, serif;
+  font-size: 1rem;
+  padding: 5px; }

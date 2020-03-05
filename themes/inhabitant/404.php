@@ -30,16 +30,34 @@
         )); ?>
 
         <h2>Archives</h2>
+
+
+        
+
+         <!-- Recent Posts Loop -->
+         <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'order' => 'ASC',
+            'numberposts' => 5
+            );
+        $product_posts = get_posts( $args ); // returns an array of posts
+        ?>
+        <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+        <h3><?php  ?></h3>
+        <?php endforeach; wp_reset_postdata(); ?>
+
         <p>Try looking in the monthly archives.</p>
-        <select class="archive-drop-down">
-            <option value="">
+        <select name="\"archive-dropdown\"" onchange="document.location.href=this.options[this.selectedIndex].value;">
+        <option value="none">Select Month</option>
+        <?php wp_get_archives('type=monthly&format=option'); ?>
         </select>
 
-    </div> <!-- closing left side div -->
+    </div> 
 
  <!-- Sidebar -->
     <?php get_sidebar();?>
 
-</section> <!-- closing main section -->
+</section> 
 <!-- Footer -->
 <?php get_footer();?>

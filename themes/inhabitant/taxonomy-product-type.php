@@ -22,7 +22,7 @@
         <!-- Products -->
         <div class="item-container">
             <div class="shop-pic">
-                <a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a></h2>
+                <a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a>
             </div>
             <div class="product">
                 <span class="title"><?php the_title(); ?></span>

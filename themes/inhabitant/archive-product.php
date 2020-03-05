@@ -7,11 +7,8 @@
     <h1>Shop Stuff</h1>
     <p><?php wp_nav_menu(array(
             'theme_location' => 'product'
-            
-
             )) ;?>  
 </div>
-
 
     <section class="product-page">
 

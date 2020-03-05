@@ -9,29 +9,13 @@ function inhabitant_files() {
 
     wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js');
 
-    wp_enqueue_script('jquery');
-
     wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
-
-    wp_enqueue_script('jquery');
-
     
     if(is_page('Home', 'About')){ 
         global $wp_query;
-
-           wp_enqueue_script('main-js', get_template_directory_uri() . '/build/js/main.min.js');
-	
-        }
-       }
-
-
-
-
-
-
-
-
-
+        wp_enqueue_script('main-js', get_template_directory_uri() . '/build/js/main.min.js');
+    }   
+}  
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
 add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
@@ -149,9 +133,11 @@ function inhabitent_post_types () {
 add_action ('init', 'inhabitent_post_types');
 
 function inhabitent_adjust_product($query) {
+    if(!is_admin() && is_post_type_archive('product')) :
     $query->set('order', 'ASC');
+    $query->set('orderby', 'title');
     $query->set('posts_per_page', '16');
-  
+    endif; 
 }
 add_action('pre_get_posts', 'inhabitent_adjust_product');
 
