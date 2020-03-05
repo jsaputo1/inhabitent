@@ -16,11 +16,7 @@
     <section class="product-page">
 
         <!-- Loop -->
-        <?php query_posts(array(  
-    'post_type' => array( 'product', ),
-    'posts_per_page' => 16, 
-    ));
-?>
+
         <?php if( have_posts() ) :
     //The WordPress Loop: loads post content 
         while( have_posts() ) :

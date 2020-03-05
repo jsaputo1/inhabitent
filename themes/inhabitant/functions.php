@@ -9,11 +9,13 @@ function inhabitant_files() {
 
     wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js');
 
-   
+    wp_enqueue_script('jquery');
 
     wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
-    
 
+    wp_enqueue_script('jquery');
+
+    
     if(is_page('Home', 'About')){ 
         global $wp_query;
 
@@ -92,8 +94,6 @@ function inhabitent_widgets () {
 
 }
 
-
-
 add_action ('widgets_init', 'inhabitent_widgets') ;
 
 function inhabitent_post_types () {
@@ -111,14 +111,6 @@ function inhabitent_post_types () {
         ),
             'menu_item' => 'dashicons-store',
     ));
-
-    function inhabitent_adjust_product($query) {
-        if(!is_admin() && is_post_type_archive(‘product’)) :
-            $query->set(‘orderby’, ‘title’);
-            $query->set(‘order’, ‘ASC’);
-        endif;
-    }
-    add_action(‘pre_get_posts’, ‘inhabitent_adjust_product’);
 
     // Register Custom Taxonomy
     
@@ -153,9 +145,14 @@ function inhabitent_post_types () {
     register_taxonomy( 'product-type', array( 'product' ), $args );
 
 }
-
-
         
 add_action ('init', 'inhabitent_post_types');
+
+function inhabitent_adjust_product($query) {
+    $query->set('order', 'ASC');
+    $query->set('posts_per_page', '16');
+  
+}
+add_action('pre_get_posts', 'inhabitent_adjust_product');
 
 ?>
