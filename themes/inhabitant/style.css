@@ -205,6 +205,7 @@ footer {
     padding-right: 50px; }
 
 .footer-info-container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -217,7 +218,7 @@ footer {
       text-decoration: underline; }
 
 .contact-info-footer {
-  padding-right: 25px; }
+  padding-right: 100px; }
   .contact-info-footer h2 {
     color: #d99054;
     font-family: Novecento Sans Web, sans-serif;
@@ -347,6 +348,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 20px;
   width: 20%; }
   .home-product-container img {
@@ -367,6 +370,8 @@ body {
     color: white;
     background-color: #248a83;
     padding: 10px 30px; }
+    .green-button a:visited {
+      color: white; }
     .green-button a:hover {
       color: white;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
