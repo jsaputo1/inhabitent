@@ -5,15 +5,13 @@ header {
 
 .header-menu {
   display: flex;
-  padding-right: 250px;
 }
 
 .header-search {
   margin-left: 25px;
 }
 .main-menu {
-  width: 100%;
-
+  width: 1120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +43,7 @@ header {
 
 .main-menu2 {
   background-color: hsla(0, 0%, 100%, 0.85);
-  width: 100%;
+  width: 1120px;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -78,8 +76,8 @@ header {
     fieldset {
       color: $darkGrey;
     }
-    padding: 0 130px 10px 130px;
   }
+  padding: 0 130px 10px 130px;
 }
 
 .search-field {
