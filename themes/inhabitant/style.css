@@ -96,6 +96,10 @@ table {
   font-weight: bold;
   font-style: normal; }
 
+header {
+  min-width: 1120px;
+  max-width: 1120px; }
+
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +128,7 @@ table {
     .main-menu a:visited {
       color: white; }
     .main-menu a:hover {
-      color: #248a83; }
+      color: #f0e4d1; }
   .main-menu li {
     display: inline;
     font-family: Novecento Sans Web, sans-serif;
@@ -148,8 +152,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 0 130px 0 130px; }
+  border-bottom: 1px solid #e1e1e1; }
   .main-menu2 a {
     text-decoration: none;
     color: #248a83; }
@@ -163,6 +166,12 @@ table {
   .main-menu2 img {
     width: 50px;
     margin-left: 0; }
+  .main-menu2 .header-search {
+    padding: 0 130px 10px 130px; }
+    .main-menu2 .header-search input {
+      color: #404040; }
+    .main-menu2 .header-search fieldset {
+      color: #404040; }
 
 .search-field {
   display: none; }
@@ -175,7 +184,8 @@ table {
   font-size: 1em; }
 
 footer {
-  padding: 50px 0px 50px 0px; }
+  padding: 50px 0px 50px 0px;
+  min-width: 1120px; }
 
 .footer-container {
   display: -webkit-box;

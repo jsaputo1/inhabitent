@@ -1,4 +1,6 @@
 header {
+  min-width: 1120px;
+  max-width: 1120px;
 }
 
 .header-menu {
@@ -23,7 +25,7 @@ header {
       color: white;
     }
     &:hover {
-      color: $green;
+      color: #f0e4d1;
     }
   }
   li {
@@ -68,7 +70,16 @@ header {
     width: 50px;
     margin-left: 0;
   }
-  padding: 0 130px 0 130px;
+  .header-search {
+    input {
+      color: $darkGrey;
+    }
+
+    fieldset {
+      color: $darkGrey;
+    }
+    padding: 0 130px 10px 130px;
+  }
 }
 
 .search-field {
