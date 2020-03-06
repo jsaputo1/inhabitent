@@ -3,6 +3,13 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%;
+
+  a {
+    color: $green;
+    &:visited {
+      color: $green;
+    }
+  }
 }
 
 .blog-banner-container {
@@ -23,6 +30,12 @@
   background-color: #248a83;
   width: 60%;
   padding: 10px 0px 10px 50px;
+  a {
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
   h2 {
     font-weight: 700;
     font-size: 2em;

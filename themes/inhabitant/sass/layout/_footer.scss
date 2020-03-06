@@ -16,6 +16,17 @@ footer {
 
 .footer-info-container {
   display: flex;
+  a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }
 
 .contact-info-footer {
@@ -30,10 +41,7 @@ footer {
     color: white;
     font-size: 1rem;
   }
-  a {
-    text-decoration: none;
-    color: white;
-  }
+
   padding-right: 25px;
 }
 
@@ -65,8 +73,3 @@ footer {
     font-weight: 400;
   }
 }
-
-// .about-hero-banner {
-//     background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(./images/about-hero.jpg);
-//     background-size: cover,cover;
-//     height: 100vh;

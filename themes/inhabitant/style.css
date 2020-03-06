@@ -121,6 +121,8 @@ table {
   .main-menu a {
     text-decoration: none;
     color: white; }
+    .main-menu a:visited {
+      color: white; }
     .main-menu a:hover {
       color: #248a83; }
   .main-menu li {
@@ -151,6 +153,8 @@ table {
   .main-menu2 a {
     text-decoration: none;
     color: #248a83; }
+    .main-menu2 a:visited {
+      color: #248a83; }
   .main-menu2 li {
     display: inline;
     font-family: Novecento Sans Web, sans-serif;
@@ -194,6 +198,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .footer-info-container a {
+    color: white; }
+    .footer-info-container a:visited {
+      color: white; }
+    .footer-info-container a:hover {
+      color: white;
+      text-decoration: underline; }
 
 .contact-info-footer {
   padding-right: 25px; }
@@ -206,9 +217,6 @@ footer {
     font-family: Merriweather Web, serif;
     color: white;
     font-size: 1rem; }
-  .contact-info-footer a {
-    text-decoration: none;
-    color: white; }
 
 .business-hours h2 {
   color: #d99054;
@@ -273,6 +281,8 @@ body {
   line-height: 1.75; }
   body a {
     text-decoration: none; }
+    body a:visited {
+      color: #2f1339; }
     body a:hover {
       color: #2f1339; }
 
@@ -605,6 +615,10 @@ p {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .journal a {
+    color: #248a83; }
+    .journal a:visited {
+      color: #248a83; }
 
 .blog-banner-container {
   display: grid;
@@ -630,6 +644,10 @@ p {
   background-color: #248a83;
   width: 60%;
   padding: 10px 0px 10px 50px; }
+  .blog-title a {
+    color: white; }
+    .blog-title a:visited {
+      color: white; }
   .blog-title h2 {
     font-weight: 700;
     font-size: 2em;

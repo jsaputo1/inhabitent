@@ -9,6 +9,9 @@ body {
 
   a {
     text-decoration: none;
+    &:visited {
+      color: #2f1339;
+    }
     &:hover {
       color: #2f1339;
     }

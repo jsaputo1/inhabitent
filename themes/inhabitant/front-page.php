@@ -20,8 +20,6 @@
 
 <!-- Main Content -->
 
-
-
 <div class="content-container">
 
     <h1 class="product-title">Shop Stuff
@@ -47,7 +45,7 @@
             <?php endforeach;?>
         </div>
 
-    <h1 class="product-title">Shop Stuff</h1>
+    <h1 class="product-title">Inhabitent Journal</h1>
     <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
         <?php

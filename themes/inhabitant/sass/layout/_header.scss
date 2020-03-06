@@ -19,6 +19,9 @@ header {
   a {
     text-decoration: none;
     color: white;
+    &:visited {
+      color: white;
+    }
     &:hover {
       color: $green;
     }
@@ -50,6 +53,9 @@ header {
   a {
     text-decoration: none;
     color: #248a83;
+    &:visited {
+      color: $green;
+    }
   }
   li {
     display: inline;
