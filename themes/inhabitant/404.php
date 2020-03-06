@@ -31,9 +31,6 @@
 
         <h2>Archives</h2>
 
-
-        
-
          <!-- Recent Posts Loop -->
          <?php
         $args = array( 
@@ -49,7 +46,7 @@
 
         <p>Try looking in the monthly archives.</p>
         <select name="\"archive-dropdown\"" onchange="document.location.href=this.options[this.selectedIndex].value;">
-        <option value="none">Select Month</option>
+        <option disabled selection>Select Month</option>
         <?php wp_get_archives('type=monthly&format=option'); ?>
         </select>
 

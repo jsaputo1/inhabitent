@@ -18,7 +18,6 @@ function inhabitant_files() {
 }  
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 
 //Adds theme support - ex: title tag
 function inhabitant_features() {
