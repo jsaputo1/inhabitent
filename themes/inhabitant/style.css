@@ -323,8 +323,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
   .main-logo img {
-    width: 25%;
-    height: 25%; }
+    width: 250px;
+    height: 250px; }
 
 .home-product-section {
   display: -webkit-box;
