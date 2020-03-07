@@ -1,6 +1,5 @@
 header {
-  min-width: 1120px;
-  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .header-menu {
@@ -55,6 +54,9 @@ header {
     color: #248a83;
     &:visited {
       color: $green;
+    }
+    &:hover {
+      color: #2f1339;
     }
   }
   li {

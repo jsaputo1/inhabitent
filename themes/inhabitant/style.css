@@ -97,8 +97,7 @@ table {
   font-style: normal; }
 
 header {
-  min-width: 1120px;
-  max-width: 1120px; }
+  margin: 0 auto; }
 
 .header-menu {
   display: -webkit-box;
@@ -158,6 +157,8 @@ header {
     color: #248a83; }
     .main-menu2 a:visited {
       color: #248a83; }
+    .main-menu2 a:hover {
+      color: #2f1339; }
   .main-menu2 li {
     display: inline;
     font-family: Novecento Sans Web, sans-serif;
