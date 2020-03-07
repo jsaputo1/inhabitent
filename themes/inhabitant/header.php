@@ -11,10 +11,21 @@
 
     <header> 
         <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">
-        <a href="http://localhost:8888/red/projects/project-04/">
-            <img src="<?php echo is_page(array('About', 'Home')) ?  get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' :
-         get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;?> " >        
-        </a>
+        <div class="nav-logo-container">
+            <div class="<?php echo is_page(array('About', 'Home')) ? 'nav-logo' : 'nav-logo2' ;?>">
+                <a href="http://localhost:8888/red/projects/project-04/">
+                <h1 class="site-title">Inhabitent</h1>
+                </a>
+            </div>  
+
+            <div class="nav-logo3">
+                <a href="http://localhost:8888/red/projects/project-04/">
+                <h1 class="site-title">Inhabitent</h1>
+                </a>
+            </div>  
+</div>
+              
+        
        
             <!-- Menu -->
         <div class="header-menu">

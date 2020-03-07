@@ -172,6 +172,43 @@ header {
   .main-menu2 .header-search fieldset {
     color: #404040; }
 
+.nav-logo {
+  background-image: url("/red/projects/project-04/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent-white.svg");
+  background-size: 50px 33px;
+  background-repeat: no-repeat; }
+  .nav-logo h1 {
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px; }
+
+.nav-logo2 {
+  background-image: url("/red/projects/project-04/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent.svg");
+  background-size: 50px 33px;
+  background-repeat: no-repeat; }
+  .nav-logo2 h1 {
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px; }
+
+.nav-logo3 {
+  display: none;
+  background-image: url("/red/projects/project-04/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent.svg");
+  background-size: 50px 33px;
+  background-repeat: no-repeat; }
+  .nav-logo3 h1 {
+    height: 33px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 50px; }
+
 .search-field {
   display: none; }
 

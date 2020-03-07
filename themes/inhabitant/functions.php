@@ -11,10 +11,15 @@ function inhabitant_files() {
 
     wp_enqueue_script( 'load-fa', 'https://kit.fontawesome.com/e785bdc78c.js' );
     
-    if(is_page('Home', 'About')){ 
+    if(is_page('About', 'Home')){ 
         global $wp_query;
         wp_enqueue_script('main-js', get_template_directory_uri() . '/build/js/main.min.js');
     }   
+
+    if(is_page('Home')){ 
+        global $wp_query;
+        wp_enqueue_script('main-js', get_template_directory_uri() . '/build/js/main.min.js');
+    }  
 }  
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
