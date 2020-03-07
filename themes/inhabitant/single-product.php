@@ -14,9 +14,9 @@
            <h3> <?php echo '$' . get_field('price');?></h3>
             <p><?php the_content(); ?></p>
                 <div class="product-button">
-                   <a href="#"> Like </a>
-                   <a href="#"> Tweet </a>
-                   <a href="#">Pin </a>
+                <a href="#"><i class="fab fa-facebook-f"></i> Like</a>
+                <a href="#"><i class="fab fa-twitter"></i> Tweet</a> 
+                <a href="#"><i class="fab fa-pinterest-p"></i> Pin</a>
                 </div>
         </div>
     </div>

@@ -29,9 +29,9 @@
                 <span class="blog-content-tag">Tagged → <?php the_tags( ' , ' );?> </span>
             </div>
             <div class="journal-button">
-                <a href="#"><i class="fa fa-facebook">Like</a>
-                <a href="#"><i class="fa fa-twitter"></i>Tweet</a> 
-                <a href="#"><i class="fa fa-pineterest"></i>Pin</a>
+                <a href="#"><i class="fab fa-facebook-f"></i> Like</a>
+                <a href="#"><i class="fab fa-twitter"></i> Tweet</a> 
+                <a href="#"><i class="fab fa-pinterest-p"></i> Pin</a>
             </div>
         </div>
         
