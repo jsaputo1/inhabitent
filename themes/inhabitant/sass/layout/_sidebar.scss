@@ -23,6 +23,9 @@
 
   a {
     color: $green;
+    &:visited {
+      color: $green;
+    }
     &:hover {
       color: #2f1339;
     }

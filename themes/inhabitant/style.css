@@ -280,6 +280,8 @@ footer {
     font-family: Merriweather Web, serif; }
   .sidebar a {
     color: #248a83; }
+    .sidebar a:visited {
+      color: #248a83; }
     .sidebar a:hover {
       color: #2f1339; }
 
