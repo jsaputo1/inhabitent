@@ -13,19 +13,17 @@
         <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">
         <div class="nav-logo-container">
             <div class="<?php echo is_page(array('About', 'Home')) ? 'nav-logo' : 'nav-logo2' ;?>">
-                <a href="http://localhost:8888/red/projects/project-04/">
+            <a href="<?php echo get_home_url(); ?>">
                 <h1 class="site-title">Inhabitent</h1>
                 </a>
             </div>  
 
             <div class="nav-logo3">
-                <a href="http://localhost:8888/red/projects/project-04/">
+                <a href="<?php echo get_home_url(); ?>">
                 <h1 class="site-title">Inhabitent</h1>
                 </a>
             </div>  
-</div>
-              
-        
+    </div>  
        
             <!-- Menu -->
         <div class="header-menu">
@@ -34,16 +32,9 @@
         )) ;?>  
         <!-- Search -->
         <div class="header-search">
-         <?php get_search_form();?>
+            <?php get_search_form();?>
         </div>
         
-
-        
-
-
-       
-
-
         </nav>
     </header>
     

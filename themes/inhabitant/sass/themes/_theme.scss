@@ -4,12 +4,23 @@
   display: grid;
   grid-template-columns: 75% 20%;
 
+  li {
+    display: block;
+    color: $darkGrey;
+  }
+
   fieldset {
     padding: 25px 0;
   }
 
   a {
     color: $green;
+    &:visited {
+      color: $green;
+    }
+    &:hover {
+      color: #2f1339;
+    }
   }
 
   h1 {
@@ -41,6 +52,8 @@
 
   select {
     margin-bottom: 50px;
+    font-family: Merriweather Web, serif;
+    font-size: 1em;
   }
 }
 

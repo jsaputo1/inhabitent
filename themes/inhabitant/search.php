@@ -18,8 +18,6 @@
             <div class="journal-button">
                 <a href="<?php the_permalink();?>">Read more →</a>
             </div>
-
-        
     <!-- Loop ends -->
     <?php endwhile;?>
         <?php the_posts_navigation();?>
@@ -27,11 +25,5 @@
     </div>
 
     <?php get_sidebar();?>
-
-
-
-
-</section>
-
-    
+</section> 
 <?php get_footer();?>

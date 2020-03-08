@@ -330,10 +330,8 @@ body {
   line-height: 1.75; }
   body a {
     text-decoration: none; }
-    body a:visited {
-      color: #2f1339; }
-    body a:hover {
-      color: #2f1339; }
+  body:hover {
+    color: #2f1339; }
 
 .left-side {
   border-right: 1px solid #e1e1e1;
@@ -779,10 +777,17 @@ p {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 75% 20%; }
+  .broken-page li {
+    display: block;
+    color: #404040; }
   .broken-page fieldset {
     padding: 25px 0; }
   .broken-page a {
     color: #248a83; }
+    .broken-page a:visited {
+      color: #248a83; }
+    .broken-page a:hover {
+      color: #2f1339; }
   .broken-page h1 {
     font-size: 2.4em;
     font-family: Novecento Sans Web, sans-serif;
@@ -803,7 +808,9 @@ p {
     color: #404040;
     font-family: Merriweather Web, serif; }
   .broken-page select {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-family: Merriweather Web, serif;
+    font-size: 1em; }
 
 .page-search i {
   display: none; }
