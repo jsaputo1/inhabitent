@@ -12,7 +12,7 @@ plugins/*
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/inhabitant/
+!themes//
 
 # Ignore packages #
 themes/inhabitant/node_modules/
