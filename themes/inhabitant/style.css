@@ -99,11 +99,6 @@ table {
 header {
   margin: 0 auto; }
 
-.header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .header-search {
   margin-left: 25px; }
 
@@ -386,8 +381,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px;
-  width: 20%; }
+  padding: 20px; }
   .home-product-container img {
     width: 30%;
     height: 30%; }
