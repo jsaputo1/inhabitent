@@ -214,6 +214,11 @@ header {
   font-family: Novecento Sans Web, sans-serif;
   font-size: 1em; }
 
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 footer {
   padding: 50px 0px 50px 0px;
   min-width: 1120px; }
