@@ -1,24 +1,16 @@
-# Inhabitent Project
+# Inhabitent
 
-## Project:
+Inabitent is a WordPress web store for outdoor/camping equipment. The theme was built from scratch and includes a custom taxonomy to allow the site administrator to add/remove/edit products easily through WordPress without the need to coe.
 
-The intention of the project is to create a Word Press website andfor an outdoor supply company. <br><br>
+## Final Product
 
-The website content is full customizable through Word Press without the need to code, and also includes a blog.
+Live Demo - https://www.johnsaputo.net/inhabitent/
 
-## Technologies Used:
+## Technologies Used
 
-HTML, CSS, jQuery, SASS, Gulp, PHP, Word Press
-
-## Personal Learnings:
-
-Word Press - Learned how to create a custom Word Press website. Learned several Word Press methods and functions as well as loops.
-
-## Stretch Goals
-
-- Added a sticky header that changes colour on scroll.
-
-## Installation Instructions:
-
-Written by: John Saputo <br>
-February 14th 2020
+- Word Press
+- PHP
+- SASS/CSS
+- HTML
+- Gulp
+- jQuery
