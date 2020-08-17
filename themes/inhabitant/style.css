@@ -99,11 +99,6 @@ table {
 header {
   margin: 0 auto; }
 
-.header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .header-search {
   margin-left: 25px; }
 
@@ -173,7 +168,7 @@ header {
     color: #404040; }
 
 .nav-logo {
-  background-image: url("/red/projects/project-04/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent-white.svg");
+  background-image: url("/inhabitent/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent-white.svg");
   background-size: 50px 33px;
   background-repeat: no-repeat; }
   .nav-logo h1 {
@@ -185,7 +180,7 @@ header {
     width: 50px; }
 
 .nav-logo2 {
-  background-image: url("/red/projects/project-04/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent.svg");
+  background-image: url("/inhabitent/wp-content/themes/inhabitant/images/logos/inhabitent-logo-tent.svg");
   background-size: 50px 33px;
   background-repeat: no-repeat; }
   .nav-logo2 h1 {
@@ -386,8 +381,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 20px;
-  width: 20%; }
+  padding: 20px; }
   .home-product-container img {
     width: 30%;
     height: 30%; }

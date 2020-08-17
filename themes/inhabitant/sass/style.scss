@@ -9,22 +9,15 @@ Text Domain: inhabitant
 */
 
 @import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
 @import 'layout/forms';
-
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/slider';
 
 @import 'pages/home';
 @import 'pages/about';
@@ -33,4 +26,3 @@ Text Domain: inhabitant
 @import 'pages/journal';
 
 @import 'themes/theme';
-@import 'themes/admin';
