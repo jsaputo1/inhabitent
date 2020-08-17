@@ -21,7 +21,6 @@
 <!-- Main Content -->
 
 <div class="content-container">
-
     <h1 class="product-title">Shop Stuff</h1>
     <!-- Product Type Loop -->
     <div class="home-product-section">
@@ -42,7 +41,6 @@
         </div>
             <?php endforeach;?>
         </div>
-
     <h1 class="product-title">Inhabitent Journal</h1>
     <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
@@ -64,15 +62,9 @@
                 <a href="<?php the_permalink(); ?>"> Read Entry </a>
             </div>
         </div>
-            
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div> 
-
 </div>
-
-
-
 <!-- Footer -->
-
 <?php get_footer();?>
