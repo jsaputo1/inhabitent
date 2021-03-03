@@ -4,7 +4,7 @@ Inabitent is a WordPress web store for outdoor/camping equipment. The theme was 
 
 ## Final Product
 
-Live Demo - https://www.johnsaputo.net/inhabitent/
+Live Demo - https://inhabitent.johnsaputo.net
 
 ## Technologies Used
 
